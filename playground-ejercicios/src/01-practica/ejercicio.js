@@ -35,7 +35,7 @@ const eso2o = {
 };
 
 const getAvg = notesObj => {
-    const notesArr = Object.values(eso2o);
+    const notesArr = Object.values(notesObj);
     let notesSum = 0;
 
     notesArr.forEach(element => {
