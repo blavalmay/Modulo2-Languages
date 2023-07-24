@@ -21,21 +21,19 @@ tailts(['hola',1,2,'adios']); // 1, 2, adios
 
 // Implementa una función init (inmutable), tal que, dado un array como entrada devuelva todos los elementos menos el último. Utiliza los métodos que ofrece Array.prototype.
 
-const initts = <T>(list: T[]): T[] => {
+const initts = <T>(list: T[]) => {
     const result = list.slice(0, list.length - 1);
     for(const elem in result) {
         console.log(result[elem])
     }
-    return result;
 }
 
 initts([1, 2, false, 'adios']); // 1, 2, false
 
 // Implementa una función last (inmutable), tal que, dado un array como entrada devuelva el último elemento.
 
-const lastts = <U>(arr: U[]): U => {
+const lastts = <U>(arr: U[]) => {
     console.log(arr.pop());
-    return arr.pop();
 }
 
 lastts(['hola',1,2,'adios']); // adios

@@ -12,4 +12,6 @@ concatts([1,'ok'],[2,'ko']); // [1, 'ok', 2, 'ko']
 
 // Repite el ejercicio anterior suponiendo cualesquiera arrays de entrada (no te limites solamente a 2).
 
-const concatMultits = (...args: string[]) => {console.log([...args.flat()])}
+const concatMultits = <C>(...args: C[]) => {console.log([...args.flat()])}
+
+concatMultits([1,'ok'],[2,'ko'],[3,'ok']); // [1, 'ok', 2, 'ko', 3, 'ok]
